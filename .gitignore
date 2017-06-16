@@ -1,1 +1,3 @@
 cmd/s3/s3
+files/*.download
+*.txt

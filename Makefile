@@ -5,4 +5,4 @@ cmd:
 
 
 clean:
-	rm -f cmd/s3/s3
+	rm -f cmd/s3/s3 files/*.download
