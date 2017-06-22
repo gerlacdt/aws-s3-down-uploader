@@ -1,8 +1,16 @@
 # AWS S3 upload and download
 
 This is a simple cli-tool to upload and download files to AWS S3.
-
 It also supports server side encryption via aws kms.
+
+## Rationale
+
+You can use this script to manage your environment variables and your secrets.
+Simply run *upload* to upload your upload your environment variables to AWS S3.
+During your service startup you run *download* and source the downloaded file.
+
+This works also with secrets because you can use *server-side-encryption* with
+AWS KMS.
 
 
 ## Installation
@@ -21,7 +29,7 @@ go get -u github.com/aws/aws-sdk-go/...
 ```
 
 In order to use this script with AWS S3 and AWS KMS encryption you need to have
-access to the specified S3 bucket and AWS KMS key via IAM roles and policies to access.
+access to the specified S3 bucket and AWS KMS key via IAM roles and policies.
 
 ## Usage
 
