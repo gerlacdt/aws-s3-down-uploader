@@ -1,8 +1,7 @@
-.PHONY: cmd
+.PHONY: cmd clean
 
 cmd:
 	cd cmd/s3; go build
 
-
 clean:
-	rm -f cmd/s3/s3 files/*.download
+	rm -f cmd/s3/s3
