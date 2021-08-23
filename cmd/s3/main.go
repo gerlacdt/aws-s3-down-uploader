@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	ms3 "github.com/gerlacdt/aws-s3/pkg/s3"
+	ms3 "github.com/gerlacdt/aws-s3-down-uploader/pkg/s3"
 
 	"log"
 
